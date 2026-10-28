@@ -97,6 +97,30 @@
             <label for="glutenfri">Glutenfritt</label>
           </fieldset>
         </div>
+        <!-- Bekräftelsesätt    -->
+        <div class="falt">
+          <fieldset>
+            <legend>Bekräftelsesätt</legend>
+
+            <input
+              type="radio"
+              id="confirm_by_email"
+              name="confirmation"
+              value="confirm_by_email"
+              required
+              checked
+            />
+            <label for="confirm_by_email">E-post</label>
+
+            <input
+              type="radio"
+              id="confirm_by_sms"
+              name="confirmation"
+              value="confirm_by_sms"
+            />
+            <label for="confirm_by_sms">SMS</label>
+          </fieldset>
+        </div>
         <!-- TODO 3: fieldset + legend för kostönskemål och bekräftelsesätt -->
         <!-- TODO 4: samtyckeskryssruta (required) och skickaknapp -->
       </form>
