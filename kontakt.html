@@ -77,7 +77,26 @@
           <label for="onskemal">Önskemål</label>
           <textarea id="onskemal" name="onskemal" rows="4" required> </textarea>
         </div>
-        <!-- TODO 2: rullista för antal personer, textarea för önskemål -->
+        <!-- Kostönskemål   -->
+        <div class="falt">
+          <fieldset>
+            <legend>Kostönskemål</legend>
+
+            <input type="checkbox" id="veg" name="kost" value="veg" />
+            <label for="veg">Vegetarisk</label>
+
+            <input type="checkbox" id="vegansk" name="kost" value="vegansk" />
+            <label for="vegansk">Vegansk</label>
+
+            <input
+              type="checkbox"
+              id="glutenfri"
+              name="kost"
+              value="glutenfri"
+            />
+            <label for="glutenfri">Glutenfritt</label>
+          </fieldset>
+        </div>
         <!-- TODO 3: fieldset + legend för kostönskemål och bekräftelsesätt -->
         <!-- TODO 4: samtyckeskryssruta (required) och skickaknapp -->
       </form>
