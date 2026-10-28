@@ -49,7 +49,7 @@
         <!-- Telefonnummer-->
         <div class="falt">
           <label for="phone">Telefon</label>
-          <input type="tel" id="phone" name="phone" autocomplete="mobile" />
+          <input type="tel" id="phone" name="phone" autocomplete="tel" />
         </div>
         <!-- Kalender -->
         <div class="falt">
@@ -61,9 +61,8 @@
         <div class="falt">
           <label for="antal_personer">Antal Personer</label>
           <select id="antal_personer" name="antal_personer" required>
-            <!-- Tycker denna rad är onödig -->
-            <!-- <option value="" disabled>Välj Antal</option> -->
-            <option value="1" selected>1</option>
+            <option value="" disabled selected>Välj antal personer</option>
+            <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -73,7 +72,11 @@
             <option value="8">8</option>
           </select>
         </div>
-
+        <!-- Önskemål (Textfält)  -->
+        <div class="falt">
+          <label for="onskemal">Önskemål</label>
+          <textarea id="onskemal" name="onskemal" rows="4" required> </textarea>
+        </div>
         <!-- TODO 2: rullista för antal personer, textarea för önskemål -->
         <!-- TODO 3: fieldset + legend för kostönskemål och bekräftelsesätt -->
         <!-- TODO 4: samtyckeskryssruta (required) och skickaknapp -->
