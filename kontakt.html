@@ -23,7 +23,7 @@
         Fyll i formuläret så bekräftar vi din bokning inom ett dygn. Fält
         markerade med * är obligatoriska.
       </p>
-
+      <!-- Namn -->
       <form action="#" method="post">
         <div class="falt">
           <label for="namn">Namn</label>
@@ -35,6 +35,7 @@
             autocomplete="name"
           />
         </div>
+        <!-- E-Mejl -->
         <div class="falt">
           <label for="email">E-Mail</label>
           <input
@@ -45,7 +46,34 @@
             autocomplete="email"
           />
         </div>
-        <!-- TODO 1: fält för namn, e-post, telefon, datum (label + input med for/id) -->
+        <!-- Telefonnummer-->
+        <div class="falt">
+          <label for="phone">Telefon</label>
+          <input type="tel" id="phone" name="phone" autocomplete="mobile" />
+        </div>
+        <!-- Kalender -->
+        <div class="falt">
+          <label for="date">Datum</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+
+        <!-- Rullista för att välja antal personer -->
+        <div class="falt">
+          <label for="antal_personer">Antal Personer</label>
+          <select id="antal_personer" name="antal_personer" required>
+            <!-- Tycker denna rad är onödig -->
+            <!-- <option value="" disabled>Välj Antal</option> -->
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+        </div>
+
         <!-- TODO 2: rullista för antal personer, textarea för önskemål -->
         <!-- TODO 3: fieldset + legend för kostönskemål och bekräftelsesätt -->
         <!-- TODO 4: samtyckeskryssruta (required) och skickaknapp -->
